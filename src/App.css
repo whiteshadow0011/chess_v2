@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 92vh; 
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 90%; 
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; 
+  max-width: 30%; 
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  width: 100%;
+  height: 50%; 
+  object-fit: cover;
+}
+
+.box p {
+  margin: 10px;
+  font-size: 18px; 
+  text-align: center;
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    min-height: 130vh; 
+  }
+
+  .heading {
+    font-size: 1.5rem; 
+  }
+
+  .boxes {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .box {
+    max-width: 100%; 
+    height: 350px; 
+  }
+}
+
+.About-box {
+  padding: 10vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  min-height: 100vh;  
+}
+
+.About-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.About-head {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.About-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.About-data {
+  width: 40vw;
+  line-height: 3vh;
+  font-size: larger;
+}
+
+.About-img {
+  background-image: url("D:/Chess_acadamy/src/assets/kid_chess.avif");
+  background-size: cover; 
+  background-position: center; 
+  height: 35vh;
+  width: 30vw;
+}
+
+.About-img2 {
+  background-image: url("D:/Chess_acadamy/src/assets/tutor.jpeg");
+  background-size: cover;  
+  background-position: center; 
+  height: 35vh;
+  width: 30vw;
+}
+
+.About-txt2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.About-data2 {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.point1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.point1-data {
+  width: 40vw;
+}
+
+@media (max-width: 768px) {
+  .About-box {
+    padding: 5vh 5vw; 
+    min-height: auto; 
+  }
+
+  .About-container {
+    flex-direction: column;
+    gap: 2vh; 
+  }
+
+  .About-img, .About-img2 {
+    width: 80vw;  
+    height: 30vh; 
+    background-size: cover; 
+    background-position: center;
+  }
+
+  
+  .About-img2 {
+    display: block; 
+  }
+
+  .About-head {
+    font-size: 6vw; 
+  }
+
+  .About-data, .About-data2 {
+    width: 80vw; 
+  }
+
+  .point1, .point1-data {
+    width: 80vw;
+  }
+}
+
+footer {
+  margin-top: auto; 
+}
