@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "src/assets/pexels-cottonbro-4973821.jpg";
-import Image2 from "src/assets/pexels-recalmedia-42070.jpg";
-import Image3 from "src/assets/pexels-vlada-karpovich-6114992.jpg";
+import Image1 from "../assets/pexels-cottonbro-4973821.jpg";
+import Image2 from "../assets/pexels-recalmedia-42070.jpg";
+import Image3 from "../assets/pexels-vlada-karpovich-6114992.jpg";
 
 const ThreeBoxesPage = () => {
   const boxes = [
