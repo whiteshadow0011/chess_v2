@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Achievements = () => {
   const cards = [
@@ -16,6 +18,10 @@ const Achievements = () => {
 
   const sliderRef = useRef(null);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: 'ease-in-out', once: false });
+  }, []);
+
   const scrollLeft = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollBy({ left: -300, behavior: 'smooth' });
@@ -31,19 +37,33 @@ const Achievements = () => {
   return (
     <div className="achieve-container">
       <div className="achieve-slider" ref={sliderRef}>
-        <button className="slider-arrow left-arrow" onClick={scrollLeft}>&lt;</button>
-        {cards.map((card) => (
+        <button
+          className="slider-arrow left-arrow"
+          onClick={scrollLeft}
+          data-aos="fade-right"
+        >
+          &lt;
+        </button>
+        {cards.map((card, index) => (
           <div
             key={card.id}
             className="achieve-card"
             style={{ backgroundImage: `url(${card.image})` }}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
           >
-            <div className="card-text">
+            <div className="card-text" data-aos="zoom-in">
               {card.text}
             </div>
           </div>
         ))}
-        <button className="slider-arrow right-arrow" onClick={scrollRight}>&gt;</button>
+        <button
+          className="slider-arrow right-arrow"
+          onClick={scrollRight}
+          data-aos="fade-left"
+        >
+          &gt;
+        </button>
       </div>
     </div>
   );
