@@ -122,7 +122,7 @@ body {
 }
 
 .About-img {
-  background-image: url("D:/Chess_acadamy/src/assets/kid_chess.avif");
+  /* background-image: url("D:/Chess_acadamy/src/assets/kid_chess.avif"); */
   background-size: cover; 
   background-position: center; 
   height: 35vh;
@@ -130,7 +130,7 @@ body {
 }
 
 .About-img2 {
-  background-image: url("D:/Chess_acadamy/src/assets/tutor.jpeg");
+  /* background-image: url("D:/Chess_acadamy/src/assets/tutor.jpeg"); */
   background-size: cover;  
   background-position: center; 
   height: 35vh;

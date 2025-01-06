@@ -1,4 +1,6 @@
 import React from 'react'
+import img1 from '../assets/kid_chess.avif'
+import img2 from '../assets/tutor.jpeg'
 
 const Aboutus = () => {
     return (
@@ -12,10 +14,12 @@ const Aboutus = () => {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam reprehenderit sunt unde? Repellat alias ratione totam quo iure quisquam perspiciatis amet a. Enim aut tenetur in.
                     </div>
                 </div>
-                <div className="About-img"></div>
+                <div className="About-img" style={{
+            backgroundImage: `url(${img1})`}}></div>
             </div>
             <div className="About-container">
-                <div className="About-img2"></div>
+                <div className="About-img2"style={{
+            backgroundImage: `url(${img2})`}}></div>
                 <div className="About-txt2">
                     <div className="About-head">
                         Our Academy's Benefits

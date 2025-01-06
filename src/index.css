@@ -134,7 +134,7 @@ body {
 }
 
 .home_container {
-    background-image: url('src/assets/pexels-vlada-karpovich-6114998.jpg');
+    /* background-image: url('src/assets/pexels-vlada-karpovich-6114998.jpg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -178,7 +178,7 @@ body {
 }
 
 .home_container {
-    background-image: url('D:\Chess_acadamy\src\assets\pexels-vlada-karpovich-6114992.jpg');
+    background-image: var(--default-background-image); /* Default background */
     background-size: cover;
     background-position: center;
     height: 88vh;  
@@ -221,7 +221,7 @@ body {
 }
 
 .home_container {
-  background-image: url('D:\\Chess_acadamy\\src\\assets\\pexels-vlada-karpovich-6114992.jpg');
+  /* background-image: url('D:\\Chess_acadamy\\src\\assets\\pexels-vlada-karpovich-6114992.jpg'); */
   background-size: cover;
   background-position: center;
   height: 88vh;  
@@ -273,32 +273,33 @@ body {
 
 @media (max-width: 480px) {
   .home_container {
-      background-image: url('D:\Chess_acadamy\src\assets\pexels-cottonbro-4973821.jpg'); 
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh; 
-      padding: 5vw;
-      justify-content: center; 
-      align-items: center; 
-      text-align: center; 
+    background-image: var(--media-background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .home_head {
-      font-size: 8vw; 
-      color: white; 
-      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); 
-      margin-bottom: 5vw; 
+    font-size: 8vw;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 5vw;
   }
 
   .home_description {
-      font-size: 1.5rem; 
-      max-width: 90%; 
-      color: white; 
-      line-height: 1.8; 
-      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); 
+    font-size: 1.5rem;
+    max-width: 90%;
+    color: white;
+    line-height: 1.8;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
   }
 }
+
 
 
 .Achieve_box {
