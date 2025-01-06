@@ -55,7 +55,7 @@ const Contactus = () => {
                 size="2x"
                 style={{ color: '#e6c300', marginRight: '10px' }}
               />
-              <span style={{ color: 'black', fontSize: 'larger' }}>@TheChessPioneersAcademy</span>
+              <span style={{ color: 'black', fontSize: 'larger' }}>@TheChessAcademy</span>
             </div>
           </div>
         </div>
